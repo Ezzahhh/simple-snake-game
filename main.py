@@ -24,17 +24,17 @@ screen.onkey(key="Right", fun=snake.right)
 
 while game_running:
     screen.update()
-    time.sleep(0.08)
+    time.sleep(0.05)
     snake.move()
 
     if abs(snake.head.xcor()) >= 290 or abs(snake.head.ycor()) >= 290:
-        scoreboard.game_over()
-        game_running = False
+        scoreboard.reset()
+        snake.reset()
 
     for snk in snake.snake_parts[1:]:
         if snake.head.distance(snk) <= 10:
-            scoreboard.game_over()
-            game_running = False
+            scoreboard.reset()
+            snake.reset()
 
     if snake.head.distance(food) < 18:
         food.new_location()

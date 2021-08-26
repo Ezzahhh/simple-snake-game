@@ -63,3 +63,11 @@ class Snake:
     def right(self) -> None:
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
+
+    def reset(self) -> None:
+        for snk in self.snake_parts:
+            snk.clear()
+            snk.ht()
+        self.snake_parts.clear()
+        self.create_snake()
+        self.head = self.snake_parts[0]
