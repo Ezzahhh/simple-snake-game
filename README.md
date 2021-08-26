@@ -6,6 +6,6 @@ There is an existing bug related to the built-in module regarding simulatenous k
 
 ## Installation Steps
 
-1. Navigate to root project directory
+1. `cd simple-snake-game`
 2. `pip install -r requirements.txt`
 3. `python main.py`
