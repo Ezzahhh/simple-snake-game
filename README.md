@@ -1,6 +1,6 @@
 # A Simple Snake Game
 
-Just a simple snake game that uses the built-in turtle module in Python.
+Just a simple snake game that uses the built-in turtle module in Python. The high score is saved to a local file called 'highscore.txt'.
 
 ![snake game image](https://i.imgur.com/xiXrNBj_d.webp?maxwidth=760&fidelity=grand)
 
